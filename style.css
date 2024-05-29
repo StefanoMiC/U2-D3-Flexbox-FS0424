@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  margin-inline: auto;
+  background-color: rgb(237, 237, 237);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  padding: 40px;
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.aqua {
+  background-color: aqua;
+}
+.coral {
+  background-color: coral;
+}
+.antique {
+  background-color: antiquewhite;
+}
+.crimson {
+  background-color: crimson;
+}
+.palegreen {
+  background-color: palegreen;
+}
+
+:where(.n2, .n4, .n6) {
+  min-height: 55vh;
+  flex-direction: column;
+}
+
+.n3 {
+  justify-content: space-between;
+}
+.n4 {
+  justify-content: space-evenly;
+}
+
+:where(.n5, .n7, .n9) {
+  min-height: 35vh;
+}
+
+.n5 {
+  align-items: center;
+}
+.n6 {
+  align-items: center;
+}
+.n7 {
+  align-items: flex-end;
+}
+:where(.n7, .n8) .box {
+  height: unset;
+  padding: unset;
+}
+
+.n8 {
+  align-items: baseline;
+  justify-content: center;
+  padding-block: 10rem;
+}
+
+.n8 .box img {
+  display: block;
+}
+
+.n9 {
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  /*  align-items agisce solo nell'allineare verticalmente due elementi con altezza differente sulla stessa riga */
+  align-items: center;
+}
