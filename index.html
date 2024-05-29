@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <h4>Proprietà dei Flex container</h4>
+
     <h2>Flex container - posiziona gli elementi (anche di blocco) sulla stessa linea</h2>
     <div class="container d-flex n1">
         <div class="box aqua">1</div>
@@ -94,6 +96,29 @@
         <div class="box antique">3</div>
         <div class="box palegreen">4</div>
     </div>
+
+    <hr>
+
+    <h4>Proprietà dei Flex-items</h4>
+
+    <h2>Flex item order - valore di -1 per prima posizione, valore 1 a singolo elemento per portarlo in fondo. valore
+        qualsiasi per spostare un elemento in altra posizione </h2>
+    <div class="container d-flex n10">
+        <div class="box aqua" style="order: 1">1</div>
+        <div class="box coral" style="order: 1">2</div>
+        <div class="box antique" style="order: 3">3</div>
+        <div class="box palegreen" style="order: 3">4</div>
+        <div class="box crimson" style="order: 2">5</div>
+    </div>
+
+    <h2>Flex item grow - permette di far crescere gli elementi per determinate unità di spazio ripartite per tutti gli
+        elementi che le usano </h2>
+    <div class="container d-flex n11">
+        <div class="box aqua" style="flex-grow: 6; flex-shrink: 6;">1</div>
+        <div class="box palegreen">2</div>
+        <div class="box crimson">3</div>
+    </div>
+
 </body>
 
 </html>

@@ -7,11 +7,21 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-block: 3rem;
 }
 
 h2 {
   margin-top: 3rem;
   text-align: center;
+}
+
+h4 {
+  margin-top: 0;
+  text-align: center;
+}
+
+hr {
+  margin-block: 3rem;
 }
 
 .container {
@@ -93,4 +103,10 @@ h2 {
   justify-content: center;
   /*  align-items agisce solo nell'allineare verticalmente due elementi con altezza differente sulla stessa riga */
   align-items: center;
+  gap: 15px;
+}
+
+.n11 .box {
+  flex-grow: 1;
+  padding: 0;
 }
